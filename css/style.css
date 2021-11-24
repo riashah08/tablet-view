@@ -1,0 +1,361 @@
+/***** STARTER CODE - DO NOT CHANGE *****/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #737373;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  
+}
+h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+html, body{
+  height: 100%;
+}
+
+
+
+nav li{
+  display: inline;
+  padding-right: 15px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0;    
+  text-align: left;
+  vertical-align: text-bottom;
+  font-size: 16px;  
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  position: static;
+}
+
+
+
+
+/*****  End Starter Code ****/
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; */
+
+  
+}
+
+ 
+nav a:visited{
+  text-decoration: underline;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav a:active{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+.skip a:focus{
+  position: absolute;
+  top: 0px;
+}
+
+.gallery-header{
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+*:focus{
+  border: 2px solid;
+}
+.appoint{
+  text-align: center;
+
+}
+.appoint-header{
+  background-color: #ffb6c1;
+}
+.container{
+  /* Requirement 5 code here*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  background-color: #ffb6c1;
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  font-size: 28px;
+}
+
+/* Remainder of requirements here: */
+
+  header{
+    width: 100%;
+    height:auto;
+    background-color: #ffb6c1;
+    background-image: url("../images/background.png"); 
+    overflow:scroll;
+    object-fit: scale-down;
+
+    
+  }
+  header p{
+    color:black;
+  }
+  .menu-header{
+    display: grid;
+    grid-template-rows: 1/-1;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+ 
+  
+  .contact{
+    background-color: #ffffff;
+    /* display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/-1; */
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  #contact a{
+    display:list-item;
+    /* grid-row: 1\-1;
+    row-gap: 30px; */
+  }
+  .about{
+    grid-column: 2/ span 1;
+    grid-row: 2/ span 1;
+  }
+  .haircut1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    grid-template-columns: 1fr;
+  }
+  .haircut1 img {
+    overflow: hidden;
+    width:80%;
+    border: solid 2px;
+    margin: 10px;
+  }
+  .facial1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    grid-template-columns: 1fr;
+  }
+  .facial1 img{
+    overflow:hidden;
+    width:80%;
+    border: solid 2px;
+    margin: 10px;
+  }
+dt,dd{
+  display:inline-block;
+  width:40%;
+}
+
+fieldset{
+  background-color: #ffb6c1;
+}
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  align-self: center; 
+  /* Your code here */
+
+}
+form {
+  border: 3px solid #f1f1f1;
+  
+}
+body{
+  background-color: #ffffff;
+}
+legend{ 
+  font-size: 125%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=checkbox]{
+  display:inline;
+  width:inherit;
+}
+
+input[type=submit] {
+background-color: #38803C;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+input[type=submit]:hover {
+opacity: 0.8;
+}
+
+@media screen and (min-width: 760px){
+  nav{
+    padding: 30px 0;
+    text-align: right;
+    justify-content: end;
+    font-size: 18px;
+  }
+
+  .container{
+    grid-template-columns: 1fr 1fr;
+
+  }
+  header{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    color: #000000;
+    height: 400px; /*  Parallax effect */
+    background-repeat: no-repeat;
+}
+.haircut1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.facial1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input{
+  width:80%;
+}
+
+textarea{
+  width:80%;
+  height: 25vh;
+}
+
+div + label{
+  line-height: 25vh;
+  vertical-align:top;
+}
+}
+
+  
+
+  
+
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+   *************************************** 
+   */
+@media screen and (prefers-reduced-motion: reduce){
+  /*Turn off scroll*/
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  /*Turn off transition*/
+  .skip a{
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
